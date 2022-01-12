@@ -2,10 +2,10 @@
 
 import aws_cdk as cdk
 
-from cdk_python_crud.cdk_python_crud_stack import CdkPythonCrudStack
+from stack import CrudStack
 
 
 app = cdk.App()
-CdkPythonCrudStack(app, "cdk-python-crud")
+CrudStack(app, "cdk-python-crud")
 
 app.synth()
